@@ -56,20 +56,24 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a >Zechuan Zhang</a><sup>*</sup>,</span>
+                <a >Zechuan Zhang</a><sup>1</sup><sup>*</sup>,</span>
                 <span class="author-block">
-                  <a>Li Sun</a><sup>*</sup>,</span>
+                  <a>Li Sun</a><sup>1,2</sup><sup>*</sup>,</span>
                   <span class="author-block">
-                    <a href="https://z-x-yang.github.io/" target="_blank">Zongxin Yang</a>,</span>
+                    <a href="https://z-x-yang.github.io/" target="_blank">Zongxin Yang</a><sup>1</sup>,</span>
                     <span class="author-block">
-                      <a>Ling Chen</a>,</span>
+                      <a>Ling Chen</a><sup>3</sup>,</span>
                       <span class="author-block">
-                        <a href="https://scholar.google.com/citations?user=RMSuNFwAAAAJ&hl=zh-CN" target="_blank">Yi Yang</a>
+                        <a href="https://scholar.google.com/citations?user=RMSuNFwAAAAJ&hl=zh-CN" target="_blank">Yi Yang</a><sup>1</sup>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>NeurIPS 2023</span>
+                    <span class="author-block"><sup>1</sup>ReLER, CCAI, Zhejiang University
+                      <br><sup>2</sup>The University of Hong Kong 
+                      <br><sup>3</sup>University of Technology Sydney
+                      <br>NeurIPS 2023
+                      </span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution</small></span>
                   </div>
 
@@ -86,7 +90,7 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
+                    <!-- Supplementary PDF link --
                     <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
@@ -95,7 +99,7 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
                   <span class="link-block">
@@ -126,13 +130,25 @@
   </div>
 </section>
 
+<!-- Teaser Image -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- Your image here -->
+      <img src="./static/images/model-structure_small.jpg" alt="Model Structure" width="100%" style="margin-left: 30px;">
+      <h2 class="subtitle has-text-centered">
+        The model structure of GTA. 
+      </h2>
+    </div>
+  </div>
+</section>
 
-<!-- Teaser video-->
+<!-- Teaser video--
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
+        <!-- Your video here --
         <source src="static/videos/banner_video.mp4"
         type="video/mp4">
       </video>
@@ -152,7 +168,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Reconstructing 3D clothed human avatars from single images is a challenging task, especially when encountering complex poses and loose clothing. Current methods exhibit limitations in performance, largely attributable to their dependence on insufficient 2D image features and inconsistent query methods. Owing to this, we present the Global-correlated 3D-decoupling Transformer for clothed Avatar reconstruction (GTA), a novel transformer-based architecture that reconstructs clothed human avatars from monocular images. Our approach leverages transformer architectures by utilizing a Vision Transformer model as an encoder for capturing global-correlated image features. Subsequently, our innovative 3D-decoupling decoder employs cross-attention to decouple tri-plane features, using learnable embeddings as queries for cross-plane generation. To effectively enhance feature fusion with the tri-plane 3D feature and human body prior, we propose a hybrid prior fusion strategy combining spatial and prior-enhanced queries, leveraging the benefits of spatial localization and human body prior knowledge. Comprehensive experiments on CAPE and THuman2.0 datasets illustrate that our method outperforms state-of-the-art approaches in both geometry and texture reconstruction, exhibiting high robustness to challenging poses and loose clothing, and producing higher-resolution textures.
           </p>
         </div>
       </div>
