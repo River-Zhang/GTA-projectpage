@@ -2,6 +2,14 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+.first-image {
+  width: 65%;
+  height: auto;
+  display: block;
+  margin: 0 auto;  /* This will center the image horizontally */
+}
+
+
 
 .footer .icon-link {
     font-size: 25px;
